@@ -2408,9 +2408,7 @@ details.collapse summary::-webkit-details-marker {
   color: hsl(var(--pc) / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
-}
+
 
 .text-\[\#FF1F3D\] {
   --tw-text-opacity: 1;
