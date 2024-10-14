@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font "Inter" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>My Video Tube</title>
+
+    <style>
+      .active-btn {
+        background-color: #ff1f3d;
+        color: white;
+      }
+      .active-btn:hover {
+        background-color: #ff1f3d;
+      }
+    </style>
+  </head>
+  <body class="font-inter">
+    <header class="container mx-auto pt-5 pb-3 border-b-2">
+      <div class="navbar gap-5 md:gap-0">
+        <div class="navbar-start">
+          <img src="Logo.png" alt="" />
+        </div>
+        <li class="navbar-center">
+          <a
+            id="sort-view-btn"
+            onclick="sortByView(this)"
+            class="btn btn-xs sm:btn-sm md:btn-md normal-case bg-[#25252533]"
+          >
+            Sort by view</a
+          >
+        </li>
+        <div class="navbar-end">
+          <a
+            onclick="blog()"
+            class="btn btn-xs sm:btn-sm md:btn-md normal-case bg-[#FF1F3D] hover:bg-[#FF1F3D] text-white"
+            target="_blank"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <section class="py-5">
+        <div
+          id="category-section"
+          class="flex justify-center gap-2 md:gap-5"
+        ></div>
+      </section>
+      <section id="loading-spinner" class="hidden my-20">
+        <span class="block mx-auto loading loading-spinner text-error"></span>
+      </section>
+      <section class="w-fit mx-auto">
+        <div
+          id="show-category-section"
+          class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <!-- <div id="no-data" class="col-span-4 flex flex-col justify-center items-center">
+            <figure class="px-10 pt-16 flex justify-center items-center">
+              <img src="/Icon.png" class="w-full"/>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-3xl font-bold">
+                Oops!! Sorry, There is no <br />
+                content here
+              </h2>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
