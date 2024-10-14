@@ -1,8 +1,8 @@
 <p align="center">
-<img src="Logo.png"  />
+
 </p>
 <p align="center" style="font-size: 24px;">
-  PH Tube is a web-based video streaming application where users can browse and watch videos sorted by categories such as music, comedy, and tutorials.
+  My Video Tube is a web-based video streaming application where users can browse and watch videos sorted by categories such as music, comedy, and tutorials.
 </p>
 
 <hr/>
@@ -100,3 +100,7 @@ Error Layout
 <img src="design/Frame 3.png">
 
 <hr/>
+
+
+![Screenshot_10](https://github.com/user-attachments/assets/20f9735e-f442-4745-ae58-2a1f5f295fb5)
+
