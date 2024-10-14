@@ -100,3 +100,7 @@ Error Layout
 <img src="design/Frame 3.png">
 
 <hr/>
+
+
+![Screenshot_10](https://github.com/user-attachments/assets/20f9735e-f442-4745-ae58-2a1f5f295fb5)
+
