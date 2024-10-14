@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font "Inter" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <section
+      class="min-h-screen container mx-auto flex justify-center items-center"
+    >
+      <div class="px-5 space-y-2 py-20">
+        <div class="py-3">
+          <p class="w-fit mx-auto text-5xl font-bold text-[#FF1F3D]">
+            Blog Questions
+          </p>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="checkbox" class="peer" />
+          <div
+            class="text-2xl md:text-3xl font-bold collapse-arrow collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+          >
+            Discuss the scope of <span class="italic">var</span>,
+            <span class="italic">let</span> and
+            <span class="italic">const</span>?
+          </div>
+          <div
+            class="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+          >
+            <p class="text-2xl font-semibold">Key points are:</p>
+            <ul class="list-disc ps-10 text-lg font-medium pt-2">
+              <li>
+                <span class="italic">var</span> declarations are function scoped
+                while <span class="italic">let</span> &
+                <span class="italic">const</span> are block scoped.
+              </li>
+              <li>
+                <span class="italic">var</span> variables can be updated and
+                re-declared within its scope <br />
+                <span class="italic">let</span> variables can be updated but not
+                re-declared <br />
+                <span class="italic">const</span> variables can neither be
+                updated and re-declared
+              </li>
+              <li>
+                They all are hoisted in their own scope.
+                <span class="italic">var</span> is initialized with
+                <span class="italic">undefined</span> but
+                <span class="italic">let</span> and
+                <span class="italic">const</span> variables are not initialized.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="checkbox" class="peer" />
+          <div
+            class="text-2xl md:text-3xl font-bold collapse-arrow collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+          >
+            Tell us the use case of <span class="italic">null</span> and
+            <span class="italic">undefined</span>?
+          </div>
+          <div
+            class="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+          >
+            <p class="text-2xl font-semibold">Key points are:</p>
+            <ul class="list-disc ps-10 text-lg font-medium pt-2">
+              <li>
+                <span class="italic">null</span> and
+                <span class="italic">undefined</span> are primitive type in
+                JavaScript
+              </li>
+              <li>
+                When we assign <span class="italic">null</span> as a value to
+                any variable, it means that it is empty or blank
+              </li>
+              <li>
+                <span class="italic">undefined</span> means "not defined". So we
+                declare a variable but do not assign a value to it, the variable
+                becomes undefined.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="checkbox" class="peer" />
+          <div
+            class="text-2xl md:text-3xl font-bold collapse-arrow collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+          >
+            What do you mean by <span class="italic">REST API</span>?
+          </div>
+          <div
+            class="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+          >
+            <p class="text-lg font-medium">
+              A REST API (Representational State Transfer Application
+              Programming Interface) is a set of rules and conventions for
+              building and interacting with web services or web applications.
+            </p>
+            <p class="text-lg font-medium mt-2">
+              Imagine a REST API as a menu in a restaurant. The menu lists
+              various dishes (resources), and each dish has a name (URL) and a
+              description (data). When you (the client) want to order something,
+              you look at the menu, choose a dish, and tell the waiter (the
+              server) what you want. The waiter then brings you the dish you
+              ordered.
+            </p>
+            <ul class="list-disc ps-10 text-lg font-medium pt-2">
+              <li>
+                The menu is like the API, listing available resources and their
+                URLs.
+              </li>
+              <li>
+                Choosing a dish is like making an HTTP request (e.g., GET, POST,
+                PUT, DELETE) to a specific URL.
+              </li>
+              <li>
+                The dish you receive is the response from the API, which can
+                include data in various formats like JSON or XML
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
